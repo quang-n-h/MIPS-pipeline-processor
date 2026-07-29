@@ -1,0 +1,14 @@
+# Verilator build output
+obj_dir/
+VMIPS
+verilator-*/
+*.tgz
+
+# Runtime dumps
+stdout.txt
+stderr.txt
+out.txt
+
+# OS clutter
+.DS_Store
+Thumbs.db
