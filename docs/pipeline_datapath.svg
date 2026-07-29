@@ -1,100 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 600" font-family="Helvetica,Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 660" font-family="Helvetica,Arial,sans-serif">
 <defs>
-<marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#222"/></marker>
+<marker id="ah" markerWidth="10" markerHeight="10" refX="7.5" refY="3" orient="auto"><path d="M0,0 L7.5,3 L0,6 Z" fill="#222"/></marker>
+<marker id="ahR" markerWidth="10" markerHeight="10" refX="7.5" refY="3" orient="auto"><path d="M0,0 L7.5,3 L0,6 Z" fill="#c0392b"/></marker>
+<marker id="ahP" markerWidth="10" markerHeight="10" refX="7.5" refY="3" orient="auto"><path d="M0,0 L7.5,3 L0,6 Z" fill="#7d3c98"/></marker>
+<marker id="ahG" markerWidth="10" markerHeight="10" refX="7.5" refY="3" orient="auto"><path d="M0,0 L7.5,3 L0,6 Z" fill="#1e8449"/></marker>
 <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0 H0 V20" fill="none" stroke="#eef1e6" stroke-width="1"/></pattern>
 </defs>
-<rect width="1160" height="600" fill="#fbfcf7"/>
-<rect width="1160" height="600" fill="url(#grid)"/>
-<rect x="292" y="78" width="24" height="452" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
-<text x="304" y="70" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">IF/ID</text>
-<rect x="548" y="78" width="24" height="452" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
-<text x="560" y="70" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">ID/EXE</text>
-<rect x="772" y="78" width="24" height="452" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
-<text x="784" y="70" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">EXE/MEM</text>
-<rect x="980" y="78" width="24" height="452" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
-<text x="992" y="70" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">MEM/WB</text>
-<path d="M30,255 L48,265 L48,315 L30,325 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
-<text x="39.0" y="294.0" font-size="9" text-anchor="middle" fill="#333">M</text>
-<rect x="70" y="265" width="40" height="34" rx="4" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
-<text x="90.0" y="286.0" font-size="13" text-anchor="middle" fill="#111">PC</text>
-<rect x="150" y="250" width="92" height="92" rx="4" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
-<text x="196.0" y="292.0" font-size="13" text-anchor="middle" fill="#111">Instruction</text>
-<text x="196.0" y="307.0" font-size="13" text-anchor="middle" fill="#111">Memory</text>
-<path d="M175,150 L205,162 L205,196 L175,208 L175,184 L187,173 L175,162 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
-<text x="192" y="182" font-size="10" text-anchor="middle">Add</text>
-<text x="150" y="150" font-size="10" text-anchor="middle">4</text>
-<rect x="320" y="168" width="150" height="104" rx="4" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
-<text x="395.0" y="216.0" font-size="13" text-anchor="middle" fill="#111">Register File</text>
-<text x="395.0" y="231.0" font-size="13" text-anchor="middle" fill="#111">(32 regs)</text>
-<text x="326" y="192" font-size="9" fill="#555">Read Reg 1/2</text>
-<text x="326" y="258" font-size="9" fill="#555">Write Reg/Data</text>
-<ellipse cx="360" cy="318" rx="44" ry="22" fill="#fff" stroke="#333" stroke-width="1.5"/>
-<text x="360" y="315" font-size="12" text-anchor="middle" fill="#111">Sign</text>
-<text x="360" y="328" font-size="12" text-anchor="middle" fill="#111">Extend</text>
-<text x="316" y="352" font-size="9" fill="#666">(15-0) 16-bit</text>
-<ellipse cx="400" cy="430" rx="50" ry="24" fill="#fff" stroke="#333" stroke-width="1.5"/>
-<text x="400" y="434" font-size="12" text-anchor="middle" fill="#111">Control</text>
-<rect x="320" y="96" width="168" height="40" rx="4" fill="#fdecec" stroke="#333" stroke-width="1.5"/>
-<text x="404.0" y="120.0" font-size="13" text-anchor="middle" fill="#111">Hazard Detection Unit</text>
-<path d="M508,360 L526,370 L526,430 L508,440 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
-<text x="500" y="378" font-size="9" text-anchor="end" fill="#b06a00">EX</text>
-<text x="500" y="398" font-size="9" text-anchor="end" fill="#b06a00">MEM</text>
-<text x="500" y="418" font-size="9" text-anchor="end" fill="#b06a00">WB</text>
-<path d="M590,205 L608,215 L608,239 L590,249 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
-<path d="M590,270 L608,280 L608,304 L590,314 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
-<path d="M650,210 L706,228 L706,272 L650,290 L650,262 L664,250 L650,238 Z" fill="#eef3fb" stroke="#2c4a7a" stroke-width="1.6"/>
-<text x="684" y="254" font-size="12" text-anchor="middle" fill="#1b3a63">ALU</text>
-<ellipse cx="690" cy="318" rx="40" ry="20" fill="#fff" stroke="#333" stroke-width="1.5"/>
-<text x="690" y="315" font-size="12" text-anchor="middle" fill="#111">ALU</text>
-<text x="690" y="328" font-size="12" text-anchor="middle" fill="#111">Control</text>
-<path d="M600,120 L628,132 L628,160 L600,172 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.2"/>
-<text x="614" y="150" font-size="9" text-anchor="middle">&lt;&lt;2</text>
-<rect x="812" y="222" width="118" height="100" rx="4" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
-<text x="871.0" y="268.0" font-size="13" text-anchor="middle" fill="#111">Data</text>
-<text x="871.0" y="283.0" font-size="13" text-anchor="middle" fill="#111">Memory</text>
-<text x="818" y="244" font-size="9" fill="#555">Address</text>
-<text x="818" y="312" font-size="9" fill="#555">Write data</text>
-<text x="924" y="244" font-size="9" fill="#555" text-anchor="end">Read data</text>
-<path d="M1024,238 L1042,248 L1042,308 L1024,318 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
-<text x="1052" y="230" font-size="10" text-anchor="middle" fill="#555">WB</text>
-<ellipse cx="950" cy="50" rx="86" ry="26" fill="#eaf3ea" stroke="#333" stroke-width="1.5"/>
-<text x="950" y="54" font-size="12" text-anchor="middle" fill="#111">Forwarding Unit</text>
-<rect x="48" y="378" width="58" height="34" rx="4" fill="#fdecec" stroke="#333" stroke-width="1.5"/>
-<text x="77.0" y="399.0" font-size="13" text-anchor="middle" fill="#111">Stall</text>
-<path d="M52,290 L70,290" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M110,282 L150,282" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M90,265 L90,208 L175,196" fill="none" stroke="#333" stroke-width="1.4"/>
-<path d="M242,296 L292,296" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M205,178 L270,178 L270,60 L20,60 L20,262 L30,262" fill="none" stroke="#555" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M316,214 L320,214" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M316,300 L330,300 L330,318 L316,318" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M316,120 L320,120" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M470,196 L548,196" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M470,236 L548,236" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M404,318 L548,318" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<text x="470" y="312" font-size="9" fill="#666">32-bit</text>
-<path d="M450,430 L517,430 L517,440" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M526,400 L548,400" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M572,214 L590,222" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M572,300 L590,292" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M608,224 L650,232" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M608,292 L650,268" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M690,298 L680,270" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M706,250 L772,250" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M796,250 L812,250" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M796,300 L812,300" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M930,244 L980,244" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M796,270 L958,270 L958,290 L980,290" fill="none" stroke="#777" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M1004,262 L1024,262" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M1004,290 L1024,290" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
-<path d="M1042,318 L1042,548 L300,548 L300,268 L320,262" fill="none" stroke="#2a7" stroke-width="1.4" marker-end="url(#ah)"/>
-<text x="150" y="562" font-size="9" fill="#2a7">write-back data to Register File</text>
-<path d="M784,120 L784,88 L900,60" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ah)"/>
-<path d="M992,120 L992,90 L1010,72" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ah)"/>
-<path d="M915,64 L600,64 L600,205" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ah)"/>
-<text x="700" y="58" font-size="10" fill="#c0392b">forwarded operands to ALU inputs</text>
-<path d="M404,136 L404,150" fill="none" stroke="#8e44ad" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ah)"/>
-<path d="M320,116 L120,116 L120,378" fill="none" stroke="#8e44ad" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ah)"/>
-<path d="M48,395 L20,395 L20,300" fill="none" stroke="#8e44ad" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ah)"/>
-<text x="130" y="360" font-size="10" fill="#8e44ad">stall: hold PC + IF/ID, flush ID/EXE</text>
+<rect width="1240" height="660" fill="#fbfcf7"/><rect width="1240" height="660" fill="url(#grid)"/>
+<rect x="296" y="92" width="22" height="474" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
+<text x="307" y="84" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">IF/ID</text>
+<rect x="556" y="92" width="22" height="474" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
+<text x="567" y="84" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">ID/EXE</text>
+<rect x="800" y="92" width="22" height="474" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
+<text x="811" y="84" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">EXE/MEM</text>
+<rect x="1016" y="92" width="22" height="474" rx="3" fill="#eef0e2" stroke="#8a9070" stroke-width="1.4"/>
+<text x="1027" y="84" font-size="12" text-anchor="middle" fill="#555" font-weight="bold">MEM/WB</text>
+<path d="M26,256 L42,265 L42,319 L26,328 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
+<rect x="58" y="276" width="36" height="32" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="76.0" y="296.0" font-size="13" text-anchor="middle">PC</text>
+<rect x="132" y="252" width="92" height="80" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="178.0" y="288.0" font-size="12" text-anchor="middle">Instruction</text>
+<text x="178.0" y="303.0" font-size="12" text-anchor="middle">Memory</text>
+<path d="M150,150 L182,162 L182,192 L150,204 L150,180 L162,177 L150,174 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.2"/>
+<text x="169" y="181" font-size="10" text-anchor="middle">Add</text>
+<text x="140" y="200" font-size="10" text-anchor="middle">4</text>
+<rect x="330" y="102" width="172" height="36" rx="4" fill="#fdecec" stroke="#333" stroke-width="1.5"/>
+<text x="416.0" y="124.0" font-size="12" text-anchor="middle">Hazard Detection Unit</text>
+<rect x="330" y="188" width="140" height="104" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="400.0" y="244.0" font-size="13" text-anchor="middle"></text>
+<text x="400" y="204" font-size="12" text-anchor="middle" font-weight="bold">Register File</text>
+<text x="336" y="214" font-size="8.5" fill="#555">Read Reg1</text>
+<text x="336" y="240" font-size="8.5" fill="#555">Read Reg2</text>
+<text x="336" y="266" font-size="8.5" fill="#555">Write Reg</text>
+<text x="336" y="286" font-size="8.5" fill="#555">Write Data</text>
+<text x="464" y="214" font-size="8.5" fill="#555" text-anchor="end">Read Data1</text>
+<text x="464" y="262" font-size="8.5" fill="#555" text-anchor="end">Read Data2</text>
+<ellipse cx="372" cy="345" rx="44" ry="20" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="372" y="342" font-size="12" text-anchor="middle">Sign</text>
+<text x="372" y="355" font-size="12" text-anchor="middle">Extend</text>
+<ellipse cx="402" cy="442" rx="50" ry="22" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="402" y="446" font-size="12" text-anchor="middle">Control</text>
+<path d="M512,402 L528,411 L528,457 L512,466 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
+<path d="M584,196 L600,205 L600,227 L584,236 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
+<path d="M584,250 L600,259 L600,281 L584,290 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
+<path d="M620,250 L636,259 L636,291 L620,300 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
+<path d="M664,204 L718,222 L718,264 L664,282 L664,254 L677,243 L664,232 Z" fill="#eaf1fb" stroke="#274b7a" stroke-width="1.6"/>
+<text x="695" y="247" font-size="12" text-anchor="middle" fill="#1b3a63">ALU</text>
+<ellipse cx="700" cy="352" rx="40" ry="20" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="700" y="349" font-size="12" text-anchor="middle">ALU</text>
+<text x="700" y="362" font-size="12" text-anchor="middle">Control</text>
+<rect x="840" y="214" width="120" height="100" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="900.0" y="260.0" font-size="12" text-anchor="middle">Data</text>
+<text x="900.0" y="275.0" font-size="12" text-anchor="middle">Memory</text>
+<text x="846" y="242" font-size="8.5" fill="#555">Address</text>
+<text x="846" y="308" font-size="8.5" fill="#555">Write Data</text>
+<text x="954" y="242" font-size="8.5" fill="#555" text-anchor="end">Read Data</text>
+<path d="M1044,236 L1060,245 L1060,299 L1044,308 Z" fill="#f3f3ea" stroke="#333" stroke-width="1.3"/>
+<text x="1052.0" y="275.0" font-size="8" text-anchor="middle">WB</text>
+<rect x="884" y="44" width="152" height="34" rx="4" fill="#eaf3ea" stroke="#333" stroke-width="1.5"/>
+<text x="960.0" y="65.0" font-size="12" text-anchor="middle">Forwarding Unit</text>
+<rect x="40" y="376" width="58" height="32" rx="4" fill="#fdecec" stroke="#333" stroke-width="1.5"/>
+<text x="69.0" y="396.0" font-size="12" text-anchor="middle">Stall</text>
+<path d="M42,292 L58,292" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M94,292 L132,292" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<circle cx="112" cy="292" r="2.6" fill="#333"/>
+<path d="M112,292 L112,177 L150,177" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M182,177 L182,120 L16,120 L16,272 L26,272" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M224,292 L296,292" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M318,213 L330,213" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M318,237 L330,237" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M318,345 L328,345" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M318,442 L352,442" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M318,120 L330,120" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M318,300 L556,300" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="505" y="296" font-size="8.5" fill="#777">dest reg</text>
+<path d="M470,213 L556,213" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M470,258 L556,258" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M416,345 L556,345" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="486" y="340" font-size="8.5" fill="#777">32-bit</text>
+<path d="M452,442 L512,434" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M528,434 L556,420" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M556,213 L584,204" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M556,258 L584,262" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M600,213 L664,224" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M600,270 L620,260" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M556,345 L608,345 L608,290 L620,290" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M636,275 L664,268" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M700,332 L700,290" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M718,246 L800,246" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<circle cx="611" cy="270" r="2.6" fill="#333"/>
+<path d="M611,270 L611,322 L800,322" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="660" y="318" font-size="8.5" fill="#777">store data</text>
+<path d="M556,300 L800,300" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M822,246 L840,242" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M822,322 L840,306" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M960,242 L1016,242" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<circle cx="832" cy="246" r="2.6" fill="#333"/>
+<path d="M832,246 L832,205 L1004,205 L1004,286 L1016,286" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M822,300 L1016,300" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M1038,252 L1044,250" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M1038,290 L1044,292" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M1060,272 L1090,272 L1090,610 L300,610 L300,282 L330,282" fill="none" stroke="#1e8449" stroke-width="1.4" marker-end="url(#ahG)"/>
+<text x="150" y="606" font-size="9" fill="#1e8449">Write-Back data to Register File</text>
+<path d="M1016,300 L1122,300 L1122,632 L268,632 L268,264 L330,264" fill="none" stroke="#1e8449" stroke-width="1.2" marker-end="url(#ahG)"/>
+<path d="M800,120 L800,61 L884,61" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahR)"/>
+<path d="M1016,120 L1016,61 L1036,61" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahR)"/>
+<path d="M556,110 L556,72 L884,72" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahR)"/>
+<path d="M900,78 L900,178 L576,178 L576,196" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahR)"/>
+<circle cx="576" cy="178" r="2.6" fill="#c0392b"/>
+<path d="M576,178 L576,250" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahR)"/>
+<text x="612" y="173" font-size="9" fill="#c0392b">ForwardA / ForwardB</text>
+<path d="M556,120 L502,120" fill="none" stroke="#7d3c98" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahP)"/>
+<path d="M416,138 L416,158 L69,158 L69,376" fill="none" stroke="#7d3c98" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahP)"/>
+<path d="M40,388 L14,388 L14,300 L26,300" fill="none" stroke="#7d3c98" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahP)"/>
+<path d="M98,384 L250,384 L250,548 L296,548" fill="none" stroke="#7d3c98" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahP)"/>
+<circle cx="250" cy="384" r="2.6" fill="#7d3c98"/>
+<path d="M250,430 L505,430 L505,415 L512,415" fill="none" stroke="#7d3c98" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ahP)"/>
+<text x="110" y="372" font-size="9" fill="#7d3c98">stall: hold PC + IF/ID, flush ID/EXE</text>
 </svg>
