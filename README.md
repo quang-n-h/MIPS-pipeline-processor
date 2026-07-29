@@ -29,7 +29,7 @@ during startup while still running the test programs at full speed afterward.
 
 ## How the code is organized
 
-![Pipelined MIPS datapath with hazard detection and forwarding](docs/pipeline_datapath.svg)
+![Pipelined MIPS datapath with hazard detection and forwarding](docs/pipeline_datapath.png)
 
 *Five stages (IF, ID, EXE, MEM, WB) separated by the IF/ID, ID/EXE, EXE/MEM, and
 MEM/WB pipeline registers. Control signals are decoded once in ID and carried
