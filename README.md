@@ -1,9 +1,9 @@
-# Pipelined MIPS Processor
+# MIPS Processor
 
-This is a MIPS processor built in Verilog as a classic five-stage pipeline. It is
+A simple MIPS processor in Verilog as a classic five-stage pipeline. It is
 written as synthesizable hardware and then run in simulation, where a compiled
 MIPS program is loaded into memory and the processor executes it one cycle at a
-time. The goal was to build a working pipelined CPU that runs real MIPS programs
+time. A working pipelined processor is built that runs real MIPS programs
 and produces the correct results while handling the hazards that come with
 pipelining.
 
@@ -19,7 +19,7 @@ or the ALU, back into the register file. Each pipeline register buffers the data
 and control signals a stage needs and supports stalling and flushing so the
 stages stay synchronized.
 
-Because several instructions are in flight at once, the design handles data and
+Because several instructions are loaded at once, the design needs to handle data and
 control hazards. Hazard detection stalls or flushes the pipeline for load-use and
 control hazards when needed, and forwarding avoids unnecessary stalls by rerouting
 a result from a later stage straight back to the ALU inputs. The design also
@@ -27,11 +27,11 @@ starts with a 241-cycle boot phase to avoid hazards during early startup, then
 transitions to full pipelined execution, which keeps the instruction flow correct
 during startup while still running the test programs at full speed afterward.
 
-## How the code is organized
+## Framework
 
 ![Pipelined MIPS datapath with hazard detection and forwarding](docs/pipeline_datapath.png)
 
-*Five stages (IF, ID, EXE, MEM, WB) separated by the IF/ID, ID/EXE, EXE/MEM, and
+*5 stages (IF, ID, EXE, MEM, WB) separated by the IF/ID, ID/EXE, EXE/MEM, and
 MEM/WB pipeline registers. Control signals are decoded once in ID and carried
 forward in the EX/MEM/WB bundle, each part being used at the stage it belongs to.
 The forwarding unit routes results from EXE/MEM and MEM/WB back to the ALU inputs,
@@ -69,14 +69,13 @@ The processor is exercised through a C++ simulation harness kept in the sim_main
 folder. This part came from a base framework and acts as the surrounding system:
 it loads a compiled program into a simulated memory, models the syscalls the
 program uses so it can print output and exit, and drives the processor's clock and
-reset while the simulation runs. The design is compiled to a fast C++ model with
+reset while the simulation runs. The design is compiled to a C++ model with
 Verilator and linked against this harness.
 
-## Building and running
+## Running
 
-From the project folder, run make. The Makefile fetches and builds a known-good
+Run make, Makefile fetches and builds a
 version of Verilator the first time (which takes a while), compiles the Verilog
-into a C++ model, and links it with the harness to produce an executable called
+into a C++ model, to produce an executable called
 VMIPS. Run a program by passing a compiled MIPS binary and a cycle limit, for
-example `./VMIPS path/to/program 100000`; running VMIPS with no arguments lists
-the debugging options.
+example `./VMIPS path/to/program 100000`.
